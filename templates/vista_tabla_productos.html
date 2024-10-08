@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Productos</title>
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <table border="1">
+        <tr>
+            <th>Código</th>
+            <th>Descripción</th>
+            <th>Unidad</th>
+            <th>Cantidad</th>
+        </tr>
+        {% for producto in productos %}
+        <tr>
+            <td>{{ producto['codigoA'] }}</td>
+            <td>{{ producto['descripcion'] }}</td>
+            <td>{{ producto['unidad'] }}</td>
+            <td>{{ producto['cantidad'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
